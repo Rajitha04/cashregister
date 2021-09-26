@@ -1,0 +1,10 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    width:50vw;
+    margin-top: 2rem;
+}
+
+.header{
+    margin-top: 1rem;
+}
