@@ -10,17 +10,21 @@ var  noofnotes=document.querySelectorAll(".noofnotes");
 
 checkbutton.addEventListener("click",function onclickhandler(){
     message.style.display="none";
-    if(billamount.value > 0)
+    var cash=cashgiven.value;
+    var bill=billamount.value;
+    if(bill > 0)
     {
-        if(cashgiven.value >= billamount.value){
+        if(cash >= bill){
 
-            var amountdifference= cashgiven.value - billamount.value ;
+            var amountdifference= cash - bill ;
             minnotes(amountdifference);
-        } 
-        else{
+            
+            } 
+        else if(cash < bill){
             message.style.display="block";
             message.innerText="cash given can't be less than bill amount";
         }
+        
     }
     else{
         message.style.display="block";
@@ -40,6 +44,8 @@ checkbutton.addEventListener("click",function onclickhandler(){
         }
         
         
+        
 
-    }
+    
+}
 
