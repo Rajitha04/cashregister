@@ -27,6 +27,7 @@ table {
     border-spacing: 5px;
     margin:auto;
     width: 25px;
+    max-width: 60%;
 }
 
 .text{
